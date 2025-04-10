@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakThrough Tech Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">BreakThrough Tech</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#about">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="dark-mode-toggle" class="btn-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Empowering Future Tech Leaders</h1>
+            <p>Learn in-demand tech skills from industry experts and jumpstart your career in technology.</p>
+            <a href="courses.html" class="btn-primary">Browse Courses</a>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <h2>Featured Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="images/stackweb.jpg" alt="Web Development">
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Master HTML, CSS, JavaScript, and modern frameworks like React and Node.js.</p>
+                    <a href="courses.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/datascience.jpg" alt="Data Science">
+                    <h3>Data Science Fundamentals</h3>
+                    <p>Learn Python, data analysis, machine learning, and visualization techniques.</p>
+                    <a href="courses.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="course-card">
+                    <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+                    <h3>Cybersecurity Essentials</h3>
+                    <p>Protect systems and networks from digital attacks with ethical hacking skills.</p>
+                    <a href="courses.html" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Academy</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>BreakThrough Tech Academy is dedicated to bridging the tech skills gap by providing affordable, high-quality education to aspiring technologists. We focus on practical, project-based learning that prepares students for real-world challenges.</p>
+                    <h3>Our Approach</h3>
+                    <p>We combine cutting-edge curriculum with mentorship from industry professionals. Our courses are designed to give you hands-on experience with the latest technologies and tools used by top companies.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/studentlearning.jpg" alt="Students learning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <p>"The web development course transformed my career. I went from zero coding experience to landing a junior developer position in just 6 months!"</p>
+                    <div class="student-info">
+                        <img src="images/kalema.jpg" alt="Student">
+                        <div>
+                            <h4>Kalema Andrew Benon</h4>
+                            <span>Web Development Graduate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The instructors are incredibly knowledgeable and supportive. The data science program gave me the confidence to pursue my dream job in AI."</p>
+                    <div class="student-info">
+                        <img src="images/haasn.jpg" alt="Student">
+                        <div>
+                            <h4>Ssenabulya Hassan</h4>
+                            <span>Data Science Graduate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The cybersecurity course provided hands-on experience with real-world scenarios. I immediately applied what I learned to secure my company's systems."</p>
+                    <div class="student-info">
+                        <img src="images/jona.jpg" alt="Student">
+                        <div>
+                            <h4>Mwesigwa Jonathan</h4>
+                            <span>Cybersecurity Graduate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the admission requirements?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We require basic computer literacy and a passion for technology. No prior coding experience is needed for beginner courses. For advanced courses, we recommend completing our foundational programs first.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long do the courses take to complete?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Course durations vary from 8 to 12 weeks depending on the program. Most courses require 10-15 hours of commitment per week including classes and projects.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer job placement assistance?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our career services team provides resume reviews, interview preparation, and connects graduates with our network of employer partners. Over 85% of our graduates find tech jobs within 6 months.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment options are available?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer several payment options including upfront payment, installment plans, and income share agreements where you pay after you get a job. Scholarships are also available for qualified students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BreakThrough Tech</h3>
+                    <p>Empowering the next generation of technology professionals through innovative education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> kalemabirungi7@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +256 740 765758</p>
+                    <div class="social-icons">
+                        <a href="mailto:kalemabirungi7@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/kalema-benon-andrew-965097353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/256740765758"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BreakThrough Tech Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

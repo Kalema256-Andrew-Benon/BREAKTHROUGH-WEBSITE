@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | BreakThrough Tech Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">BreakThrough Tech</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="index.html#about">About</a>
+                <a href="contact.html">Contact</a>
+                <button id="dark-mode-toggle" class="btn-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Courses Page Content -->
+    <section class="courses-page">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <div class="search-container">
+                <input type="text" id="course-search" placeholder="Search courses...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="all-courses">
+                <div class="course-item" data-category="web">
+                    <img src="images/stackweb.jpg" alt="Web Development">
+                    <div class="course-details">
+                        <h3>Full-Stack Web Development</h3>
+                        <p>Comprehensive training in front-end and back-end development with modern frameworks.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-level-up-alt"></i> Beginner to Advanced</span>
+                        </div>
+                        <button class="btn-primary enroll-btn">Enroll Now</button>
+                        <div class="enroll-form" style="display: none;">
+                            <h4>Enroll in Full-Stack Web Development</h4>
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <input type="hidden" name="course" value="Full-Stack Web Development">
+                                <button type="submit" class="btn-primary">Complete Enrollment</button>
+                            </form>
+                            <div class="enroll-success" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-category="data">
+                    <img src="images/datascience.jpg" alt="Data Science">
+                    <div class="course-details">
+                        <h3>Data Science Fundamentals</h3>
+                        <p>Master data analysis, visualization, and machine learning with Python.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                        </div>
+                        <button class="btn-primary enroll-btn">Enroll Now</button>
+                        <div class="enroll-form" style="display: none;">
+                            <h4>Enroll in Data Science Fundamentals</h4>
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <input type="hidden" name="course" value="Data Science Fundamentals">
+                                <button type="submit" class="btn-primary">Complete Enrollment</button>
+                            </form>
+                            <div class="enroll-success" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-category="security">
+                    <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+                    <div class="course-details">
+                        <h3>Cybersecurity Essentials</h3>
+                        <p>Learn to protect systems and networks from digital threats and attacks.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-level-up-alt"></i> Beginner to Intermediate</span>
+                        </div>
+                        <button class="btn-primary enroll-btn">Enroll Now</button>
+                        <div class="enroll-form" style="display: none;">
+                            <h4>Enroll in Cybersecurity Essentials</h4>
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <input type="hidden" name="course" value="Cybersecurity Essentials">
+                                <button type="submit" class="btn-primary">Complete Enrollment</button>
+                            </form>
+                            <div class="enroll-success" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-category="mobile">
+                    <img src="images/appdevelopment.jpg" alt="Mobile Development">
+                    <div class="course-details">
+                        <h3>Mobile App Development</h3>
+                        <p>Build cross-platform mobile applications with React Native and Flutter.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                        </div>
+                        <button class="btn-primary enroll-btn">Enroll Now</button>
+                        <div class="enroll-form" style="display: none;">
+                            <h4>Enroll in Mobile App Development</h4>
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <input type="hidden" name="course" value="Mobile App Development">
+                                <button type="submit" class="btn-primary">Complete Enrollment</button>
+                            </form>
+                            <div class="enroll-success" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-category="cloud">
+                    <img src="images/cloudcomputing.jpg" alt="Cloud Computing">
+                    <div class="course-details">
+                        <h3>Cloud Computing with AWS</h3>
+                        <p>Deploy and manage applications on Amazon Web Services cloud platform.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                            <span><i class="fas fa-level-up-alt"></i> Advanced</span>
+                        </div>
+                        <button class="btn-primary enroll-btn">Enroll Now</button>
+                        <div class="enroll-form" style="display: none;">
+                            <h4>Enroll in Cloud Computing with AWS</h4>
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <input type="hidden" name="course" value="Cloud Computing with AWS">
+                                <button type="submit" class="btn-primary">Complete Enrollment</button>
+                            </form>
+                            <div class="enroll-success" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-item" data-category="ai">
+                    <img src="images/aiandmachine.jpg" alt="AI & Machine Learning">
+                    <div class="course-details">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Introduction to artificial intelligence and machine learning algorithms.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-level-up-alt"></i> Advanced</span>
+                        </div>
+                        <button class="btn-primary enroll-btn">Enroll Now</button>
+                        <div class="enroll-form" style="display: none;">
+                            <h4>Enroll in AI & Machine Learning</h4>
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <input type="hidden" name="course" value="AI & Machine Learning">
+                                <button type="submit" class="btn-primary">Complete Enrollment</button>
+                            </form>
+                            <div class="enroll-success" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BreakThrough Tech</h3>
+                    <p>Empowering the next generation of technology professionals through innovative education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> kalemabirungi7@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +256 740 765758</p>
+                    <div class="social-icons">
+                        <a href="mailto:kalemabirungi7@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/kalema-benon-andrew-965097353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/256740765758"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BreakThrough Tech Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>
